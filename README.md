@@ -77,4 +77,24 @@ Project.swift에서 언급했던 Target이다. Target은 사용할 모듈을 정
         additionalFiles: [ProjectDescription.FileElement] = []
     )
     
+1) name: Target의 이름
+2) platform: iOS, macOS, tvOS, watchOS 같은 플랫폼
+3) product: app, appClips, staticFramework, framework, unitTest 등
+4) productName: The built product name. 만들어진 product의 이름
+5) bundleId: 프로젝트 파일을 열었을때 보이는 Bundle Identifier
+6) deploymentTarget: 배포타겟을 설정할 수 있다. iOS, macOS, tvOS, watchOS가 있고 버전을 입력받는다. iOS같은 경우 디바이스도 받으면서 ipad, iphone, mac 3종류가 있다.
+7) infoPlist: 기본으로 제공되는 것을 쓸 수도 있고 key 값에 따라 value를 넣어주면 커스텀으로 추가적으로 값을 넣어줄 수 있다. 또는 미리 Info.plist를 넣어놓고 경로를 줄 수도 있다.
+8) sources: 소스 코드의 경로를 입력해주면 됩니다. [ ] 안에 문자열로 경로를 입력한다.
+9) resources: 앞서서 resourceSynthesizers에서 Tuist가 Resources/ 의 리소스들을 자동으로 코드화한다고 했는데, 그때 이 리소스들이 어디에 있는지에 대한 경로다. sources와 같이 [ ] 안에 문자열로 경로를 입력한다.
+10) copyFiles: Target에 대한 Build Phase 파일 복사 작업
+11) headers: Target에 대한 headers
+12) entitlements: Target에 대한 entitlements의 경로를 입력해준다.
+13) scripts: Target에 대한 Build Phase 스크립트 작업
+14) dependencies: Target의 의존성에 대한 것이고, 라이브러리나 다른 모듈을 의존성으로 넣을 때 쓴다.
+15) settings: Target의 세팅을 정의
+16) coreDataModels: CoreData의 모델들의 경로랑 버전을 정의
+17) environment: scheme에서 Edit Scheme... 버튼을 누르면 나오는 창에서 Environment Variables를 설정할 수 있는데 이때 environment를 설정하면 자동으로 생성한다.
+18) launchArguments: scheme에서 Edit Scheme... 버튼을 누르시면 나오는 창에서 Arguments Passed On Launch를 설정할 수 있는데 이때 launchArguments 설정하면 자동으로 생성한다.
+19) additionalFiles: 프로젝트를 생성할때 자동으로 생겨나지 않는 파일을 등록해놓으면 Xcode에서 볼 수 있다.
+
 
