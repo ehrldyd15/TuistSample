@@ -1,7 +1,7 @@
 # TuistSample
 
 
-## 1. Project Initializer
+## Project.swift
 
     public init(
         name: String,
@@ -28,5 +28,53 @@
 9) additionalFiles: Tuist에서 프로젝트를 만들때 Xcode에 자동으로 연결해주지 않는 파일을 넣으면 프로젝트에 연결시켜준다. 예를 들어서 README.md같은 파일은 프로젝트를 만들때 Xcode에는 자동으로 보여지지않는데 여기에 추가해준다면 Xcode에서도 볼 수 있다.
 10) resourceSynthesizers: Tuist는 프로젝트를 생성할때 Resources/ 안에 파일 확장자에 따라 enum을 제공해준다.
 
-## 2. Workspace.swift
+## Workspace.swift
+
+    public init(
+        name: String,
+        projects: [ProjectDescription.Path],
+        schemes: [ProjectDescription.Scheme] = [],
+        fileHeaderTemplate: ProjectDescription.FileHeaderTemplate? = nil,
+        additionalFiles: [ProjectDescription.FileElement] = [],
+        generationOptions: ProjectDescription.Workspace.GenerationOptions = .options()
+    )
+
+1) name: 워크스페이스의 이름
+2) projects: Workspace에 등록할 프로젝트들의 경로를 넣어주면 된다. struct인 Path를 받지만 그냥 문자열로 넣어주셔도 된다. 기본 경로는 프로젝트의 루트 디렉토리를 기준이다.
+3) schemes, fileHeaderTemplate, additionalFiles: 위의 Project에서 설명과 동일
+4) generationOptions: Tuist가 xcworkspace 파일을 만들때의 옵션을 설정해줄 수 있다.
+
+## Config.swift
+
+프로젝트 전역으로 쓰이는 설정을 설정해줄 수 있다. 
+
+예를 들어서 Swift의 버전이나 Xcode의 버전 같은게 있다.
+Config.swift는 {프로젝트 루트 디렉토리}/Tuist/Config.swift에 있을 때만 적용된다.
+
+## Target
+
+Project.swift에서 언급했던 Target이다. Target은 사용할 모듈을 정의하는 struct이다다.
+
+    public init(
+        name: String,
+        platform: ProjectDescription.Platform,
+        product: ProjectDescription.Product,
+        productName: String? = nil,
+        bundleId: String,
+        deploymentTarget: ProjectDescription.DeploymentTarget? = nil,
+        infoPlist: ProjectDescription.InfoPlist? = .default,
+        sources: ProjectDescription.SourceFilesList? = nil,
+        resources: ProjectDescription.ResourceFileElements? = nil,
+        copyFiles: [ProjectDescription.CopyFilesAction]? = nil,
+        headers: ProjectDescription.Headers? = nil,
+        entitlements: ProjectDescription.Path? = nil,
+        scripts: [ProjectDescription.TargetScript] = [],
+        dependencies: [ProjectDescription.TargetDependency] = [],
+        settings: ProjectDescription.Settings? = nil,
+        coreDataModels: [ProjectDescription.CoreDataModel] = [],
+        environment: [String : String] = [:],
+        launchArguments: [ProjectDescription.LaunchArgument] = [],
+        additionalFiles: [ProjectDescription.FileElement] = []
+    )
+    
 
