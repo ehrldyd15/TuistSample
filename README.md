@@ -3,18 +3,18 @@
 
 ## 1. Project Initializer
 
-public init(
-    name: String,
-    organizationName: String? = nil,
-    options: ProjectDescription.Project.Options = .options(),
-    packages: [ProjectDescription.Package] = [],
-    settings: ProjectDescription.Settings? = nil,
-    targets: [ProjectDescription.Target] = [],
-    schemes: [ProjectDescription.Scheme] = [],
-    fileHeaderTemplate: ProjectDescription.FileHeaderTemplate? = nil,
-    additionalFiles: [ProjectDescription.FileElement] = [],
-    resourceSynthesizers: [ProjectDescription.ResourceSynthesizer] = .default
-)
+    public init(
+        name: String,
+        organizationName: String? = nil,
+        options: ProjectDescription.Project.Options = .options(),
+        packages: [ProjectDescription.Package] = [],
+        settings: ProjectDescription.Settings? = nil,
+        targets: [ProjectDescription.Target] = [],
+        schemes: [ProjectDescription.Scheme] = [],
+        fileHeaderTemplate: ProjectDescription.FileHeaderTemplate? = nil,
+        additionalFiles: [ProjectDescription.FileElement] = [],
+        resourceSynthesizers: [ProjectDescription.ResourceSynthesizer] = .default
+    )
 
 1) name: 프로젝트의 이름 (name.xcodeproj)
 2) organizationName: 프로젝트 파일의 inspector를 봤을때 있는 Organization에 들어가는 이름
