@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2D8BD27ECF5A5FF1124399DA /* SourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17BCE84FABEDED9CCCEA25E /* SourceTests.swift */; };
+		3205BB76692E3726A816425E /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C069CDD3763C44C4633E78A3 /* RxCocoa.framework */; platformFilter = ios; };
+		3D5308C75C3A14135B2AB590 /* ThirdParties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7324E1F8C3505E4CFB56D8C2 /* ThirdParties.swift */; };
 		487399DB9C8FBB2A4B78BFA7 /* ThirdPartyLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DC52CFF6683FA84E78694E9 /* ThirdPartyLib.framework */; platformFilter = ios; };
 		5414A78AC43DFDD8F87050F4 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736C628CCD4B3D759C279824 /* Source.swift */; };
+		BC887368E669EF78A4E50961 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673B0313B04ADA59B7295BC8 /* RxSwift.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +49,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		673B0313B04ADA59B7295BC8 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7324E1F8C3505E4CFB56D8C2 /* ThirdParties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdParties.swift; sourceTree = "<group>"; };
 		736C628CCD4B3D759C279824 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		7DC52CFF6683FA84E78694E9 /* ThirdPartyLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartyLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8CC2E9B272A9C7755B9A43D /* ThirdPartyLibTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ThirdPartyLibTests-Info.plist"; sourceTree = "<group>"; };
 		AFAB913FDAEB2440EFF0AEDF /* ThirdPartyLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThirdPartyLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C069CDD3763C44C4633E78A3 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17BCE84FABEDED9CCCEA25E /* SourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTests.swift; sourceTree = "<group>"; };
 		EFED1E1A4600EB01B963541C /* ThirdPartyLib-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ThirdPartyLib-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3205BB76692E3726A816425E /* RxCocoa.framework in Frameworks */,
+				BC887368E669EF78A4E50961 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				736C628CCD4B3D759C279824 /* Source.swift */,
+				7324E1F8C3505E4CFB56D8C2 /* ThirdParties.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -99,6 +108,8 @@
 		99610B6746DED12D992F54AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				C069CDD3763C44C4633E78A3 /* RxCocoa.framework */,
+				673B0313B04ADA59B7295BC8 /* RxSwift.framework */,
 				7DC52CFF6683FA84E78694E9 /* ThirdPartyLib.framework */,
 				AFAB913FDAEB2440EFF0AEDF /* ThirdPartyLibTests.xctest */,
 			);
@@ -233,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5414A78AC43DFDD8F87050F4 /* Source.swift in Sources */,
+				3D5308C75C3A14135B2AB590 /* ThirdParties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

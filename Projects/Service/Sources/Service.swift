@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+public class ServiceTest {
+    public static func printTest() {
+        print("프린트 테스트 했다")
+    }
+}

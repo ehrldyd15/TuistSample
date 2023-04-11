@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01BAD6C2B6945FA9B8BF31DF /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFFE7A7AA92C7C24782E0A12 /* RxSwift.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0E047AF0506A12220B9AA2E2 /* Feature_Feature.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E063C5B0D361E7F246E0AD36 /* Feature_Feature.bundle */; };
 		1DF82502591B33D3D11AB083 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FBA2AD8C24B93B3A478F13 /* SceneDelegate.swift */; };
 		29497517B2C48D656F8952BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CE78EDE813FBEB6DE3E35F /* LaunchScreen.storyboard */; };
 		2C496C12E83FF7AF951C9DD2 /* TuistAssets+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3481038851FD5A58C4D73013 /* TuistAssets+Sample.swift */; };
 		315D245DF4AACB63BE2DE003 /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF60DEB8BF3A2F2ADE0DF357 /* Service.framework */; platformFilter = ios; };
+		3E83FE62A7A5BCD48B6712D5 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B042EE68B07055B59DA48D8 /* RxCocoa.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		41F876D8E8FFD6A62DA9714A /* ThirdPartyLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 61DC1D693551412F61202F17 /* ThirdPartyLib.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		50FCAA9C035CD3677643DC29 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C6BE14933E288801600DA4E7 /* RxRelay.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		534FD54537630A94E45086BD /* Feature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF820B161EDD4C3FE639BA8A /* Feature.framework */; platformFilter = ios; };
 		58A3A8A98C53A21630DA8C65 /* TuistBundle+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74051D77E12F77046D4E685A /* TuistBundle+Sample.swift */; };
+		6F219C7ADC78B6E0BDCD2890 /* RxCocoaRuntime.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F7F59644854160C6F441C590 /* RxCocoaRuntime.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7DDED5DE86398BBE1F3E97AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BBD5A4981C1971FFDE2F3D /* AppDelegate.swift */; };
 		8CB762551147FBDAECBB9FB8 /* Feature_Feature.bundle in Dependencies */ = {isa = PBXBuildFile; fileRef = E063C5B0D361E7F246E0AD36 /* Feature_Feature.bundle */; platformFilter = ios; };
 		9CA44E120078421E0C43C844 /* ThirdPartyLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61DC1D693551412F61202F17 /* ThirdPartyLib.framework */; platformFilter = ios; };
@@ -58,6 +62,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				3E83FE62A7A5BCD48B6712D5 /* RxCocoa.framework in Embed Frameworks */,
+				6F219C7ADC78B6E0BDCD2890 /* RxCocoaRuntime.framework in Embed Frameworks */,
+				50FCAA9C035CD3677643DC29 /* RxRelay.framework in Embed Frameworks */,
+				01BAD6C2B6945FA9B8BF31DF /* RxSwift.framework in Embed Frameworks */,
 				41F876D8E8FFD6A62DA9714A /* ThirdPartyLib.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -66,6 +74,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1B042EE68B07055B59DA48D8 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29345AE11A906FF03B4B74CA /* SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3481038851FD5A58C4D73013 /* TuistAssets+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+Sample.swift"; sourceTree = "<group>"; };
 		457AECC5B9FAC09BEEB89B75 /* SampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SampleTests-Info.plist"; sourceTree = "<group>"; };
@@ -75,10 +84,13 @@
 		74051D77E12F77046D4E685A /* TuistBundle+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Sample.swift"; sourceTree = "<group>"; };
 		93CE78EDE813FBEB6DE3E35F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96BBD5A4981C1971FFDE2F3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFFE7A7AA92C7C24782E0A12 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6BE14933E288801600DA4E7 /* RxRelay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxRelay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8FBA2AD8C24B93B3A478F13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E063C5B0D361E7F246E0AD36 /* Feature_Feature.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Feature_Feature.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC91F57743B93CBF4F0E233E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EF820B161EDD4C3FE639BA8A /* Feature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Feature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7F59644854160C6F441C590 /* RxCocoaRuntime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxCocoaRuntime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF60DEB8BF3A2F2ADE0DF357 /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -188,6 +200,10 @@
 			children = (
 				E063C5B0D361E7F246E0AD36 /* Feature_Feature.bundle */,
 				EF820B161EDD4C3FE639BA8A /* Feature.framework */,
+				1B042EE68B07055B59DA48D8 /* RxCocoa.framework */,
+				F7F59644854160C6F441C590 /* RxCocoaRuntime.framework */,
+				C6BE14933E288801600DA4E7 /* RxRelay.framework */,
+				AFFE7A7AA92C7C24782E0A12 /* RxSwift.framework */,
 				6EA1FD221929BAD4DF20310A /* Sample.app */,
 				29345AE11A906FF03B4B74CA /* SampleTests.xctest */,
 				FF60DEB8BF3A2F2ADE0DF357 /* Service.framework */,
