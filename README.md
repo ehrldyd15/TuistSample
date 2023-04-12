@@ -97,4 +97,6 @@ Project.swift에서 언급했던 Target이다. Target은 사용할 모듈을 정
 18) launchArguments: scheme에서 Edit Scheme... 버튼을 누르시면 나오는 창에서 Arguments Passed On Launch를 설정할 수 있는데 이때 launchArguments 설정하면 자동으로 생성한다.
 19) additionalFiles: 프로젝트를 생성할때 자동으로 생겨나지 않는 파일을 등록해놓으면 Xcode에서 볼 수 있다.
 
+### 참고 자료
 
+https://baegteun.tistory.com/3
